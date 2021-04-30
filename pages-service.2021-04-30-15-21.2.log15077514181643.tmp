@@ -1,0 +1,67 @@
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.ConstructorResolver] [main] [808] [DEBUG] Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'dataSourceInitializedPublisher'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'healthEndpointGroupsBeanPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'transactionAttributeSource'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'transactionInterceptor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.ConstructorResolver] [main] [808] [DEBUG] Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.ConstructorResolver] [main] [808] [DEBUG] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.ConstructorResolver] [main] [808] [DEBUG] Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'meterRegistryPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.ConstructorResolver] [main] [808] [DEBUG] Autowiring by type from bean name 'meterRegistryPostProcessor' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e44f2a5'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'projectingArgumentResolverBeanPostProcessor'
+[2021-04-30T15:21:12.012Z] [org.springframework.ui.context.support.UiApplicationContextUtils] [main] [85] [DEBUG] Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1b5c3e5f]
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+[2021-04-30T15:21:12.012Z] [org.apache.juli.logging.DirectJDKLog] [main] [175] [DEBUG] The Apache Tomcat Native library could not be found using names [tcnative-1, libtcnative-1] on the java.library.path [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]. The errors reported were [Can't load library: /home/pal1/kube-workspace/opensourcecloudnative/data-rest-k8s-log-volume/bin/libtcnative-1.so, Can't load library: /home/pal1/kube-workspace/opensourcecloudnative/data-rest-k8s-log-volume/bin/liblibtcnative-1.so, no tcnative-1 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib], no libtcnative-1 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]]
+org.apache.tomcat.jni.LibraryNotFoundError: Can't load library: /home/pal1/kube-workspace/opensourcecloudnative/data-rest-k8s-log-volume/bin/libtcnative-1.so, Can't load library: /home/pal1/kube-workspace/opensourcecloudnative/data-rest-k8s-log-volume/bin/liblibtcnative-1.so, no tcnative-1 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib], no libtcnative-1 in java.library.path: [/usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /lib/x86_64-linux-gnu, /usr/lib/x86_64-linux-gnu, /usr/lib/jni, /lib, /usr/lib]
+	at org.apache.tomcat.jni.Library.<init>(Library.java:102)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:193)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:102)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getDefaultLifecycleListeners(TomcatServletWebServerFactory.java:173)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.<init>(TomcatServletWebServerFactory.java:120)
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat.tomcatServletWebServerFactory(ServletWebServerFactoryConfiguration.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:216)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:159)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at org.kube.books.BooksApplication.main(BooksApplication.java:11)
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.ConstructorResolver] [main] [808] [DEBUG] Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+[2021-04-30T15:21:12.012Z] [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [main] [225] [DEBUG] Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'

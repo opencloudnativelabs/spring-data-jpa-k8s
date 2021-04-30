@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: books
+    servicefor: books
+  name: books
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: books
+    servicefor: books
+  type: NodePort
+status:
+  loadBalancer: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: books
+    servicefor: books
+  name: books
+  namespace: logs
+spec:
+    volumes:
+    - name: log-volume
+      hostPath:
+        # directory location on host
+        path: /data
+        # this field is optional
+        type: Directory
+    containers:
+      - image: opencloudnatives/books:logs
+        imagePullPolicy: Always
+        name: pages
+        ports:
+          - containerPort: 8080
+        volumeMounts:
+          - name: log-volume
+            mountPath: "/var/tmp/"
+        readinessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 15
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 15

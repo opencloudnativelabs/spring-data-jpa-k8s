@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-persistent-claim
+  namespace: logs
+spec:
+  volumeMode: Filesystem
+  storageClassName: mysql-pv
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: mysql-persistent-volume
+  namespace: logs
+  labels:
+    type: local
+spec:
+  volumeMode: Filesystem
+  storageClassName: mysql-pv
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/mnt/my-mysql"

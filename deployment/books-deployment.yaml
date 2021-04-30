@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: books
+    servicefor: books
+  name: books
+  namespace: logs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: books
+      servicefor: books
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: books
+        servicefor: books
+    spec:
+      volumes:
+        - name: log-volume
+          persistentVolumeClaim:
+            claimName: log-persistent-claim
+      containers:
+        - image: opencloudnatives/books:logs
+          imagePullPolicy: Always
+          name: pages
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: log-volume
+              mountPath: "/var/tmp/"
+          readinessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 15
+          livenessProbe:
+            httpGet:
+              path: /actuator/health
+              port: 8080
+            initialDelaySeconds: 15
+          resources: {}
+status: {}

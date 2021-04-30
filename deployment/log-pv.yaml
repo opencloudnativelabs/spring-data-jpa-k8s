@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: log-persistent-claim
+  namespace: logs
+spec:
+  volumeMode: Filesystem
+  storageClassName: logs-pv
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 500Mi
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: log-persistent-volume
+  namespace: logs
+  labels:
+    type: local
+spec:
+  volumeMode: Filesystem
+  storageClassName: logs-pv
+  capacity:
+    storage: 500Mi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/mnt/logs"
