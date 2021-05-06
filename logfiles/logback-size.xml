@@ -13,7 +13,7 @@
         <encoder>
             <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.sss'Z'}] [%C] [%t] [%L] [%-5p] %m%n</pattern>
         </encoder>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <fileNamePattern>/var/tmp/books-service.%d{yyyy-MM-dd-HH-mm}.%i.log.zip</fileNamePattern>
             <maxHistory>1</maxHistory>
             <maxFileSize>1KB</maxFileSize>
