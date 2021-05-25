@@ -33,7 +33,7 @@ spec:
     containers:
       - image: opencloudnatives/books:logs
         imagePullPolicy: Always
-        name: pages
+        name: book
         ports:
           - containerPort: 8080
         volumeMounts:
